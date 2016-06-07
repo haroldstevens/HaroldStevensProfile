@@ -1,11 +1,21 @@
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	margin: 0;
+    background-image: url(Harold.jpg);
+    background-position: right top, 60%;
+    background-repeat: no-repeat, repeat;  
+    background-size: 100%, 50%;
+    background-color: #666;
 }
 
 #page-header {
-    background-color:#ff2200;
+    display: block;
+    float: right;
     padding:0 16px;
+    text-align: center;
+    position: relative;
+    top: 150px;
+
 }
 
 #page-header h1 {
@@ -27,6 +37,125 @@ body {
 	font-weight: 900;
 }
 
+#topbar ul{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#topbar li{
+    display: inline;
+    border:2px solid #fff;
+}
+
+#topbar a{
+    color: white;
+    text-align: center;
+    padding: "14px 16px";
+    text-decoration: none;
+}
+
+#topbar a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+
+#top{
+    position:relative;
+    top:0%;
+}
+
+
+
+#summary{
+    display: block;
+    position: relative;
+    top: 600px;
+    left:400px;
+}
+
+#summary h1 {
+    display: inline;
+    position: relative;
+    top: 40px;
+    left: -150px;
+}
+
+#work_experience{
+    display: block;
+    position: relative;
+    top: 900px;
+    left: 450px;
+}
+
+#work_experience h1{
+    display: block;
+    position: relative;
+    top: 40px;
+    left: -200px;
+}
+
+#education{
+    display: block;
+    position: relative;
+    top: 1200px;
+    left:400px;
+}
+
+#education h1{
+    display: block;
+    position: relative;
+    top: 40px;
+    left: -110px;
+}
+
+#contact-form{
+    display: block;
+    position: relative;
+    top: 1500px;
+    background-color: black;
+}
+
+fieldset {
+    display: block;
+    padding: 20px;
+    color: white;
+}
+
+input[type=text], textarea {
+    position: relative;
+    left: 200px;
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    position: relative;
+    left: 200px;
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
 
 ul {
 
