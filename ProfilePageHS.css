@@ -1,21 +1,26 @@
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	margin: 0;
-    background-image: url(Harold.jpg);
-    background-position: right top, 60%;
-    background-repeat: no-repeat, repeat;  
-    background-size: 100%, 50%;
     background-color: #666;
 }
 
-#page-header {
-    display: block;
-    float: right;
-    padding:0 16px;
-    text-align: center;
-    position: relative;
-    top: 150px;
+* {
+    box-sizing: border-box;
+}
 
+#Harold {
+	position:relative
+	top: 0%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.4;
+}
+
+#page-header {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    padding:0 16px;
 }
 
 #page-header h1 {
@@ -72,54 +77,29 @@ body {
     top:0%;
 }
 
-
-
 #summary{
     display: block;
     position: relative;
-    top: 600px;
-    left:400px;
-}
-
-#summary h1 {
-    display: inline;
-    position: relative;
-    top: 40px;
-    left: -150px;
+    top: 100px;
+    width: 600px;
 }
 
 #work_experience{
     display: block;
     position: relative;
-    top: 900px;
-    left: 450px;
-}
-
-#work_experience h1{
-    display: block;
-    position: relative;
-    top: 40px;
-    left: -200px;
+    top: 200px;
 }
 
 #education{
     display: block;
     position: relative;
-    top: 1200px;
-    left:400px;
-}
-
-#education h1{
-    display: block;
-    position: relative;
-    top: 40px;
-    left: -110px;
+    top: 300px;
 }
 
 #contact-form{
     display: block;
     position: relative;
-    top: 1500px;
+    top: 400px;
     background-color: black;
 }
 
@@ -158,6 +138,14 @@ input[type=submit]:hover {
 }
 
 ul {
-
 	list-style: none
 	}
+
+
+@media screen and (max-width: 80%) {
+
+	#page-header{
+		float: center;
+		text-align: center;
+	}
+}
